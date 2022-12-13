@@ -1,0 +1,64 @@
+body{
+    margin:0;
+    line-height: 1.6em;
+    font-size: 18px;
+}
+
+// welcome
+.welcome{
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0,0,0,.2);
+    // background: linear-gradient(to left, black, transparent);
+    .heading{
+        text-align: center;
+        width: 60%;
+        color: #fff;
+        .title{
+            text-align: center;
+            font-weight: 500;
+            line-height: 1.6em;
+            .title-span{
+                display: block;
+                color: crimson;
+            }
+        }
+    }
+    // position을 이용한 video
+    // video{ 
+    //     position: absolute;
+    //     min-width: 100%;
+    //     min-height: 100%;
+    //     z-index: -1;
+    //     top: 50%; //해상도가 줄어도 가운데로 유지하기 위함
+    //     left: 50%;
+    //     transform: translate(-50%,-50%);
+    // }
+
+    // object-fit을 이용한 video
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; //부모와 자식 부분에 너비와 높이가 지정되어 있어야함.
+    }
+}
+
+// content
+.content{
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    .inner{
+        width: 1280px;
+        display: flex;
+        gap: 70px;
+    }
+}

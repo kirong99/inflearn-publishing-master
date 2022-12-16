@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .frame1{
+            width: 400px;
+            height: 500px;
+            background: url(../img/poster.PNG) no-repeat center left;
+            border: 5px solid #000;
+        }
+        .frame2{
+            width: 400px;
+            height: 400px;
+            border: 5px solid red;
+        }
+        .image1{
+            width: inherit;
+            height: inherit;
+            object-fit:contain;
+            object-position: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame1"></div>
+    <div class="frame2">
+        <img class="image1" src="../img/poster.PNG">
+    </div>
+    
+</body>
+</html>

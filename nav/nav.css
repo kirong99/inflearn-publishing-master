@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+body {
+  background-color: #eee;
+}
+
+.container header {
+  background-color: #fff;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.15);
+}
+.container header nav {
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header nav div {
+  height: 70px;
+}
+.container header nav div.logo {
+  flex: 0.5;
+}
+.container header nav div.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container header nav div.logo a img {
+  width: 70px;
+  height: 70px;
+}
+.container header nav div.gnb {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header nav div.gnb a {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container header nav div.login {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container header nav div.login a {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: aquamarine;
+  border-radius: 16px;
+  padding: 5px 1rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+section .inner {
+  border: 1px solid #000;
+  width: 1280px;
+}
+section .inner .items {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+section .inner .items .item {
+  border: 1px solid blue;
+  flex: 1;
+}
+section .inner .items .item .item-list {
+  background-color: rgb(131, 131, 247);
+  text-align: center;
+  color: #fff;
+  height: 150px;
+}
+section .inner .items .item .item-list .btns {
+  margin-top: 20px;
+}
+section .inner .items .item .item-list .btns .btn {
+  background-color: #000;
+  color: #fff;
+  width: 70px;
+  display: inline-block;
+  margin: 3px;
+  padding: 5px;
+  border-radius: 16px;
+}
+section .inner .items .item .item-list .btns .btn.download {
+  width: 200px;
+}
+section .inner .items .item .item-desc {
+  display: none;
+}
+
+/*# sourceMappingURL=nav.css.map */

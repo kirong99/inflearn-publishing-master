@@ -59,24 +59,73 @@ section{
     display: flex;
     justify-content: center;
     .inner{
-        border: 1px solid #000;
         width: 1280px;
-        h1{}
-        h2{}
+        h1{margin-bottom: 10px;}
+        h2{margin-bottom: 10px;}
         .items{
-            border: 1px solid red;
             display: flex;
-            align-items: center;
             justify-content: center;
             gap: 40px;
             .item{
-                border: 1px solid blue;
                 flex: 1;
+                // 드롭다운 1번째
+                // .item-desc{
+                //  display: none;
+                // }
+                // &:hover{
+                //     .item-desc{
+                //         display: block;
+                //     }
+                // }
+                // 드롭다운 2번째
+                // .item-desc{
+                //     height: 0;
+                //     overflow: hidden;
+                //     padding: 0;
+                //     transition: .5s;
+                // }
+                // &:hover{
+                //     .item-desc{
+                //         height: 200px;
+                //         padding: 15px 25px;
+                //     }
+                // }
+                // 드롭다운 3번째
+                // position: relative;
+                // .item-desc{
+                //     display: none;
+                //     position: absolute;
+                // }
+                // &:hover{
+                //     .item-desc{
+                //         display: block;
+                //     }
+                // }
+                .item-desc{
+                    display: none;
+                }
+                &:nth-child(2){
+                    .item-list{
+                        background-color: rgb(69, 69, 248);
+                    }
+                    .item-desc{
+                        border-color: rgb(69, 69, 248);
+                    }
+                }
+                &:nth-child(3){
+                    .item-list{
+                        background-color: rgb(17, 17, 177);
+                    }
+                    .item-desc{
+                        border-color: rgb(17, 17, 177);
+                    }
+                }
                 .item-list{
                     background-color: rgb(131, 131, 247);
                     text-align: center;
                     color: #fff;
                     height: 150px;
+                    padding: 20px;
                     .btns{
                         margin-top: 20px;
                         .btn{
@@ -94,7 +143,26 @@ section{
                     }
                 }
                 .item-desc{
-                    display: none;
+                    border: 3px solid rgb(131, 131, 247);
+                    border-top: none;
+                    padding: 15px 25px;
+                    font-size: 14px;
+                    p{
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                    ul{
+                        list-style: none;
+                        margin: 0;
+                        padding: 5px;
+                        background-color: #e3e3e3;
+                        li{
+                            &::before{
+                                content: '-';
+                                margin-right: 5px;
+                            }
+                        }
+                    }
                 }
             }
         }

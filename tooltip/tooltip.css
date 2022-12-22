@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.6em;
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+.tooltip{
+    position: relative;
+}
+.tooltip .question{
+    font-size: 50px;
+    color: dodgerblue;
+}
+.tooltip span{
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    width: 250px;
+    border-radius: 3px;
+    padding: 5px;
+    top: -68px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.tooltip span::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.tooltip:hover span{
+    opacity: 1;
+    transition: .3s;
+    visibility: visible;
+}
+
+.sns-tooltip a{
+    color: #fff;
+    margin: 5px;
+    position: relative;
+}
+
+.sns-tooltip a::before{
+    content: attr(data-text);
+    position: absolute;
+    background-color: #777;
+    width: 60px;
+    height: 15px;
+    color: #000;
+    font-size: 10px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 15px;
+    border-radius: 2px;
+}
+.sns-tooltip a::after{
+    content: '';
+    position: absolute;
+    background-color: #777;
+    width: 4px;
+    height: 4px;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+
+/* hover */
+.sns-tooltip a::before,.sns-tooltip a::after{
+    opacity: 0;
+    transition: .3s;
+}
+
+.sns-tooltip a:hover::before,.sns-tooltip a:hover::after{
+    opacity: 1;
+    transition: .3s;
+}

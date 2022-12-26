@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    color: #333;
+    line-height: 1.6em;
+    background-color: #c5d3f6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+/* Table : Member */
+.member{
+    width: 900px;
+    background-color: #fff;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+    border-radius: 5px;
+    overflow: hidden; /* 배경색이 넘쳤기 때문 */
+}
+.member caption{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.member tr{
+    border-bottom: 1px solid #eee;
+    transition: .3s;
+}
+.member tr:last-child{
+    border: none;
+}
+/* .member tr:hover{
+    background-color: #eee;
+} */
+.member tr:nth-child(odd){ /* 홀수는 odd, 짝수는 even */
+    background-color: #eee;
+}
+.member th, .member td{
+    padding: 12px;
+    text-align: center;
+}
+.member tr td{
+
+}
+.member tr th{
+    background-color: dodgerblue;
+    color: #fff;
+}
+.member tr td:nth-child(5){
+    color: red;
+}

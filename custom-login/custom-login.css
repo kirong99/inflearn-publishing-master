@@ -1,0 +1,150 @@
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6em;
+    color: #333;
+    background: url(img/background.png) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+    margin-top: 0;
+}
+input,button{
+    outline: none;
+}
+
+/* custom checkbox & radio login Form */
+.login{
+    width: 430px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+.login h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+.field{
+    display: block;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+}
+input[type=email],input[type=password]{
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding-left: 30px;
+}
+input[type=email]{
+    background: url(img/icon-user.png) no-repeat center left 3px;
+}
+input[type=email]::placeholder,input[type=password]::placeholder{
+    color: #aaa;
+    transition: .35s;
+}
+input[type=password]{
+    background: url(img/icon-password.png) no-repeat center left 3px;
+}
+input[type=email]:focus,input[type=password]:focus{
+    border-color: #999;
+}
+input[type=email]:focus::placeholder,input[type=password]:focus::placeholder{
+    opacity: 0;
+}
+.save-info{
+    margin: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    /* overflow: hidden; */
+}
+/* .save-info label{
+    float: left;
+}
+.save-info a{
+    float: right;
+} */
+.event-info{
+    text-align: center;
+}
+.event-info label{
+    display: inline-block;
+    margin-top: 10px;
+}
+.login input[type=button]{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    background-image: linear-gradient(to bottom, #48c6ef 0%, #6f86d6 100%);
+    color: #fff;
+}
+.sns-info{
+    text-align: center;
+    margin: 25px;
+}
+.sns{
+    margin: 10px 0;
+}
+.sns a i{
+    font-size: 26px;
+    width: 45px;
+    height: 45px;
+    line-height: 47px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #fff;
+    margin: 3px;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+.sns a:nth-child(1) i{
+    background-color: #DD4B39;
+}
+.sns a:nth-child(2) i{
+    background-color: #1877F2;
+}
+.sns a:nth-child(3) i{
+    background-color: #25D366;
+}
+.sns a:nth-child(4) i{
+    background-color: #FFDC00;
+}
+.signup-info{
+    text-align: center;
+}
+.signup-info span{
+    display: block;
+}
+.signup-info a{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.signup-info a:hover{
+    text-decoration: underline;
+}

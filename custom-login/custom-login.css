@@ -148,3 +148,30 @@ input[type=email]:focus::placeholder,input[type=password]:focus::placeholder{
 .signup-info a:hover{
     text-decoration: underline;
 }
+input[id=save-email],input[name=event]{
+    display: none;
+}
+input[id=save-email] + em{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    background: url(img/icon-checkbox.png) no-repeat;
+    background-position: left;
+    vertical-align: middle;
+}
+input[id=save-email]:checked + em{
+    background-position: right;
+}
+input[name=event] + em{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    background: url(img/icon-radio.png) no-repeat;
+    background-position: left;
+    vertical-align: middle;
+}
+input[name=event]:checked + em{
+    background-position: right;
+}
